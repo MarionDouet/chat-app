@@ -4,11 +4,19 @@ import './Contact.css';
 function Contact(props){
     return( 
         <div className="Contact">
-            <h1 class="name">{props.name}</h1>
             <img class="avatar" src={props.avatar}></img>
-            <p class="status">{props.online}</p>    
+            <div>
+            <h4 className="name">{props.name}</h4>
+            <div className="status">
+                <p className = "status-text">{props.online ? "Online" : "Offline"}</p>
+                <span className= {props.online ? "status-online" : "status-offline"}></span>
+                
+               
+            </div> 
+        </div>    
         </div>   
     )
   }
 
 export default Contact;
+
