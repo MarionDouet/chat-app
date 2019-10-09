@@ -9,9 +9,7 @@ function Contact(props){
             <h4 className="name">{props.name}</h4>
             <div className="status">
                 <p className = "status-text">{props.online ? "Online" : "Offline"}</p>
-                <span className= {props.online ? "status-online" : "status-offline"}></span>
-                
-               
+                <span className= {props.online ? "status-online" : "status-offline"}></span>       
             </div> 
         </div>    
         </div>   
